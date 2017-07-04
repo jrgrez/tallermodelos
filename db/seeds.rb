@@ -3,5 +3,15 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   movies = Movie.create([{ content: 'Star Wars' }, { content: 'Lord of the Rings' }])
+#   Character.create(content: 'Luke', movie: movies.first)
+
+Post.create(content: 'Germany')
+Post.create(content: 'France')
+Post.create(content: 'Belgium')
+Post.create(content: 'Netherlands')
+
+Comment.create(content: 'Germany', post_id: 2)
+Comment.create(content: 'France', post_id: 2)
+Comment.create(content: 'Belgium', post_id: 1)
+Comment.create(content: 'Netherlands', post_id: 3)
